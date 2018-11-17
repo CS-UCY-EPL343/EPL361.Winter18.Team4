@@ -5,54 +5,75 @@ export const DANCECLASSES: DanceClass[] = [
     availDays: [
       {className: 'Tango', hours: [0, 4, 5]},
       {className: 'Latin Dance', hours: [0, 4, 5]},
-      {},
-      {}
+      {className: 'Belly Dance', hours: [0, 4, 5]},
+      {className: 'Latin Dance', hours: [0, 4, 5]},
+      {className: 'Street Dance', hours: [0, 4, 5]},
+      {className: 'Breakdance', hours: [0, 4, 5]},
+      {className: 'Κυπριακοί-Παραδοσιακοί', hours: [0, 4, 5]},
+      {className: 'Λαϊκοι', hours: [0, 4, 5]},
+      {className: 'Contemporary', hours: [0, 4, 5]},
+      {className: 'Flexibility', hours: [0, 4, 5]},
+      {className: 'Ballet', hours: [0, 4, 5]},
     ]
   },
-  {id: 1, name: 'Latin Dance',
+  { day: 'Tuesday',
     availDays: [
-      {day: 'Monday', hours: [0, 4, 5]},
-      {day: 'Wednesday', hours: []}
-    ]},
-  {id: 2, name: 'Belly Dance',
+      {className: 'Tango', hours: [0, 4, 5]},
+      {className: 'Latin Dance', hours: [0, 4, 5]},
+      {className: 'Belly Dance', hours: [0, 4, 5]},
+      {className: 'Latin Dance', hours: [0, 4, 5]},
+      {className: 'Street Dance', hours: [0, 4, 5]},
+      {className: 'Breakdance', hours: [0, 4, 5]},
+      {className: 'Κυπριακοί-Παραδοσιακοί', hours: [0, 4, 5]},
+      {className: 'Λαϊκοι', hours: [0, 4, 5]},
+      {className: 'Contemporary', hours: [0, 4, 5]},
+      {className: 'Flexibility', hours: [0, 4, 5]},
+      {className: 'Ballet', hours: [0, 4, 5]},
+    ]
+  },
+  { day: 'Wednesday',
     availDays: [
-      {day: 'Monday', hours: [0, 4, 5]},
-      {day: 'Wednesday', hours: []}
-    ]},
-  {id: 3, name: 'Street Dance (Hip-Hop)',
+      {className: 'Tango', hours: [0, 4, 5]},
+      {className: 'Latin Dance', hours: [0, 4, 5]},
+      {className: 'Belly Dance', hours: [0, 4, 5]},
+      {className: 'Latin Dance', hours: [0, 4, 5]},
+      {className: 'Street Dance', hours: [0, 4, 5]},
+      {className: 'Breakdance', hours: [0, 4, 5]},
+      {className: 'Κυπριακοί-Παραδοσιακοί', hours: [0, 4, 5]},
+      {className: 'Λαϊκοι', hours: [0, 4, 5]},
+      {className: 'Contemporary', hours: [0, 4, 5]},
+      {className: 'Flexibility', hours: [0, 4, 5]},
+      {className: 'Ballet', hours: [0, 4, 5]},
+    ]
+  },
+  { day: 'Thursday',
     availDays: [
-      {day: 'Monday', hours: [0, 4, 5]},
-      {day: 'Wednesday', hours: []}
-    ]},
-  {id: 4, name: 'Βreakdance',
+      {className: 'Tango', hours: [0, 4, 5]},
+      {className: 'Latin Dance', hours: [0, 4, 5]},
+      {className: 'Belly Dance', hours: [0, 4, 5]},
+      {className: 'Latin Dance', hours: [0, 4, 5]},
+      {className: 'Street Dance', hours: [0, 4, 5]},
+      {className: 'Breakdance', hours: [0, 4, 5]},
+      {className: 'Κυπριακοί-Παραδοσιακοί', hours: [0, 4, 5]},
+      {className: 'Λαϊκοι', hours: [0, 4, 5]},
+      {className: 'Contemporary', hours: [0, 4, 5]},
+      {className: 'Flexibility', hours: [0, 4, 5]},
+      {className: 'Ballet', hours: [0, 4, 5]},
+    ]
+  },
+  { day: 'Friday',
     availDays: [
-      {day: 'Monday', hours: [0, 4, 5]},
-      {day: 'Wednesday', hours: []}
-    ]},
-  {id: 5, name: 'Κυπριακοί-Παραδοσιακοί',
-    availDays: [
-      {day: 'Monday', hours: [0, 4, 5]},
-      {day: 'Wednesday', hours: []}
-    ]},
-  {id: 6, name: 'Λαϊκοι',
-    availDays: [
-      {day: 'Monday', hours: [0, 4, 5]},
-      {day: 'Wednesday', hours: []}
-    ]},
-  {id: 7, name: 'Contemporary',
-    availDays: [
-      {day: 'Monday', hours: [0, 4, 5]},
-      {day: 'Wednesday', hours: []}
-    ]},
-  {id: 8, name: 'Flexibility',
-    availDays: [
-      {day: 'Monday', hours: [0, 4, 5]},
-      {day: 'Wednesday', hours: []}
-    ]},
-  {id: 9, name: 'Ballet',
-    availDays: [
-      {day: 'Monday', hours: [0, 4, 5]},
-      {day: 'Wednesday', hours: []}
-    ]}
-
+      {className: 'Tango', hours: [0, 4, 5]},
+      {className: 'Latin Dance', hours: [0, 4, 5]},
+      {className: 'Belly Dance', hours: [0, 4, 5]},
+      {className: 'Latin Dance', hours: [0, 4, 5]},
+      {className: 'Street Dance', hours: [0, 4, 5]},
+      {className: 'Breakdance', hours: [0, 4, 5]},
+      {className: 'Κυπριακοί-Παραδοσιακοί', hours: [0, 4, 5]},
+      {className: 'Λαϊκοι', hours: [0, 4, 5]},
+      {className: 'Contemporary', hours: [0, 4, 5]},
+      {className: 'Flexibility', hours: [0, 4, 5]},
+      {className: 'Ballet', hours: [0, 4, 5]},
+    ]
+  }
 ];
