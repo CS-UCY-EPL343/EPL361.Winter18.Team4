@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-<<<<<<< HEAD
       <module fileurl="file://$PROJECT_DIR$/.idea/EPL361.Winter18.Team4.iml" filepath="$PROJECT_DIR$/.idea/EPL361.Winter18.Team4.iml" />
-=======
       <module fileurl="file://$PROJECT_DIR$/.idea/EPL361.iml" filepath="$PROJECT_DIR$/.idea/EPL361.iml" />
 >>>>>>> c84ecb29251064a90b208d3c0de1bb19f7dc8810
     </modules>
