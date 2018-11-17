@@ -11,7 +11,7 @@ export class DanceClassesComponent implements OnInit {
   danceClasses = DANCECLASSES;
   selectedClass: DanceClass;
   panelOpenState = false;
-  constructor() { }
+  constructor() {  }
 
   ngOnInit() {
   }

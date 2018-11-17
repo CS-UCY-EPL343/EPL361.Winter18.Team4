@@ -1,10 +1,12 @@
 import {DanceClass} from './DanceClass';
 
 export const DANCECLASSES: DanceClass[] = [
-  {id: 0, name: 'Tango',
+  { day: 'Monday',
     availDays: [
-      {day: 'Monday', hours: [0, 4, 5]},
-      {day: 'Wednesday', hours: []}
+      {className: 'Tango', hours: [0, 4, 5]},
+      {className: 'Latin Dance', hours: [0, 4, 5]},
+      {},
+      {}
     ]
   },
   {id: 1, name: 'Latin Dance',

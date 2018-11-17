@@ -1,10 +1,9 @@
 export class DanceClass {
-  id: number;
-  name: string;
+  day: string;
   availDays: AvailableHours[];
 }
 
 class AvailableHours {
-  day: string;
+  className: string;
   hours: number[];
 }
