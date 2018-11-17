@@ -1,11 +1,9 @@
 export class DanceClass {
-  id: number;
-  name: string;
-  // availDays: AvailableHours[];
+  day: string;
+  availDays: AvailableHours[];
 }
 
-// https://angular.io/tutorial/toh-pt1#two-way-binding
 class AvailableHours {
-  day: string;
+  className: string;
   hours: number[];
 }

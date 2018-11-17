@@ -14,6 +14,11 @@ import { LogInComponent } from './log-in/log-in.component';
 import { SingupLoginComponent } from './singup-login/singup-login.component';
 
 
+import {MatCheckboxModule, MatExpansionModule, MatGridListModule, MatTableModule, MatTabsModule} from '@angular/material';
+import { ContactUsComponent } from './contact-us/contact-us.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { NewsComponent } from './news/news.component';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 @NgModule({
   declarations: [
@@ -24,6 +29,10 @@ import { SingupLoginComponent } from './singup-login/singup-login.component';
     SingUpComponent,
     LogInComponent,
     SingupLoginComponent
+    DanceClassesComponent,
+    ContactUsComponent,
+    AboutUsComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +42,13 @@ import { SingupLoginComponent } from './singup-login/singup-login.component';
     CustomMaterialModule,
     MatStepperModule,
     ReactiveFormsModule,
+    BrowserAnimationsModule,
+    MatTabsModule,
+    MatGridListModule,
+    MatTableModule,
+    MatCheckboxModule,
+    MatExpansionModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
