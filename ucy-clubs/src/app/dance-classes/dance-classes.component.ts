@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DanceClass} from '../DanceClass';
+import {DANCECLASSES} from '../mock-dance-classes';
 
 @Component({
   selector: 'app-dance-classes',
@@ -7,13 +8,15 @@ import {DanceClass} from '../DanceClass';
   styleUrls: ['./dance-classes.component.css']
 })
 export class DanceClassesComponent implements OnInit {
-  danceClass: DanceClass = {
-    id: 1,
-    name: 'Tango'
-  };
+  danceClasses = DANCECLASSES;
+  selectedClass: DanceClass;
+  panelOpenState = false;
   constructor() { }
 
   ngOnInit() {
+  }
+  onSelect(danceClass: DanceClass): void {
+    this.selectedClass = danceClass;
   }
 
 }
