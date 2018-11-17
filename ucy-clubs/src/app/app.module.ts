@@ -7,13 +7,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { VoteComponent } from './vote/vote.component';
 import { DanceClassesComponent } from './dance-classes/dance-classes.component';
+import { UcyDashboardComponent } from './ucy-dashboard/ucy-dashboard.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     VoteComponent,
-    DanceClassesComponent
+    DanceClassesComponent,
+    UcyDashboardComponent
   ],
   imports: [
     BrowserModule,
