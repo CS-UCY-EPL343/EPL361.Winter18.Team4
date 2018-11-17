@@ -6,7 +6,6 @@ import { AppRoutingModule } from './/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './home/home.component';
 import { VoteComponent } from './vote/vote.component';
-import { DanceClassComponent } from './dance-class/dance-class.component';
 import { DanceClassesComponent } from './dance-classes/dance-classes.component';
 
 @NgModule({
@@ -14,7 +13,6 @@ import { DanceClassesComponent } from './dance-classes/dance-classes.component';
     AppComponent,
     HomeComponent,
     VoteComponent,
-    DanceClassComponent,
     DanceClassesComponent
   ],
   imports: [
