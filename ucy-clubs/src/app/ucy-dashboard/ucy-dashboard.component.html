@@ -1,4 +1,4 @@
-<mat-grid-list cols="3" rowHeight="6:1">
+<!--<mat-grid-list cols="3" rowHeight="6:1">
   <mat-grid-tile><button mat-button="b1">Χορευτικός Όμιλος </button></mat-grid-tile>
   <mat-grid-tile><button mat-button>Θεατρικός Όμιλος </button></mat-grid-tile>
   <mat-grid-tile><button mat-button>Δημοσιογραφικός Όμιλος</button></mat-grid-tile>
@@ -22,6 +22,12 @@
   <mat-grid-tile><button mat-button>Ομιλος Αρχαιολογίας</button></mat-grid-tile>
 
 </mat-grid-list>
-<base href="/">
+<base href="/
+-->
+<mat-grid-list cols="3" rowHeight="6:1">
 
+  <mat-grid-tile *ngFor="let x  of club ">
+    <button mat-button="null">{{x.Name}}}</button>
+  </mat-grid-tile>
 
+</mat-grid-list>
