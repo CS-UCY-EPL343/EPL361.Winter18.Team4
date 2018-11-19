@@ -1,0 +1,23 @@
+<mat-card class="product-card" >
+  <mat-card-header>
+    <mat-card-title>{{ info.title }}</mat-card-title>
+    <mat-card-subtitle>{{ info.club }}</mat-card-subtitle>
+  </mat-card-header>
+  
+  <img mat-card-image src= "{{ info.imageSrc }}" alt="Photo of a product">
+  
+  <mat-card-content>
+    <div class="price"> {{ info.price }} </div>
+  </mat-card-content>
+
+  <mat-card-actions>
+    <div fxLayout="row wrap">
+        <button mat-button fxFlex="25" (click)="increaseQuantity()">+</button>
+        <input fxFlex="25" type="text" class="form-control"  [(ngModel)]="quantity" required/>
+        <button fxFlex="25" mat-button (click)="decreaseQuantity()">-</button>
+        <button fxFlex="25" mat-button (click)="addInCart()">Add</button>
+    </div>
+
+
+  </mat-card-actions>
+</mat-card>
