@@ -1,6 +1,4 @@
-import { Component, Injectable } from '@angular/core';
-import 'hammerjs';
-
+import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-root',
@@ -8,7 +6,5 @@ import 'hammerjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'ucy-clubs';
-  
+  title = 'app works!';
 }
-
