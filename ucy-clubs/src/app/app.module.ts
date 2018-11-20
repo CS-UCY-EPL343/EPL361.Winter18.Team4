@@ -4,6 +4,8 @@ import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
 import {FlexLayoutModule} from '@angular/flex-layout'
 import { FormsModule } from '@angular/forms';
+import {MatExpansionModule} from '@angular/material/expansion'
+import { MatListModule  } from '@angular/material/list'
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -16,6 +18,10 @@ import { ShopComponent } from './UI-Shop/shop/shop.component';
 import { ProductInCartComponent } from './UI-Shop/product-in-cart/product-in-cart.component';
 
 import { DataService } from './UI-Shop/DataService'
+import { VoteComponent } from './vote/vote.component';
+import { DanceClassesComponent } from './dance-classes/dance-classes.component';
+
+
 
 
 @NgModule({
@@ -26,7 +32,9 @@ import { DataService } from './UI-Shop/DataService'
     CartComponent,
     ProductsInCartComponent,
     ShopComponent,
-    ProductInCartComponent
+    ProductInCartComponent,
+    VoteComponent,
+    DanceClassesComponent
   ],
   imports: [
     BrowserModule,
@@ -35,7 +43,9 @@ import { DataService } from './UI-Shop/DataService'
     MatCardModule,
     MatGridListModule,
     FlexLayoutModule,
-    FormsModule
+    FormsModule,
+    MatExpansionModule,
+    MatListModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent] 

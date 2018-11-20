@@ -1,0 +1,31 @@
+  <div #vote>
+    <h3>Make your vote</h3>
+
+    <mat-accordion>
+      <mat-expansion-panel *ngFor="let dance of danceClasses">
+        <mat-expansion-panel-header>
+          <mat-panel-title>
+            {{dance.name}}
+          </mat-panel-title>
+          <mat-panel-description>
+
+          </mat-panel-description>
+        </mat-expansion-panel-header>
+
+        <div #hours>
+          <mat-selection-list >
+            <div *ngFor="let avail of dance.availDays">
+              <mat-list-option *ngFor="let hour of avail.hours">
+                  {{avail.day}} - {{hour + 9}}:00 - {{hour+9}}:59
+            </mat-list-option>
+            </div>
+          </mat-selection-list>
+        </div>
+      </mat-expansion-panel>
+    </mat-accordion>
+
+    <button mat-raised-button>Submit vote</button>
+  </div>
+
+
+
