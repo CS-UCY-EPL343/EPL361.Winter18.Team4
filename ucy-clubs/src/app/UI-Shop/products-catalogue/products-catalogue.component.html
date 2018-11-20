@@ -3,7 +3,7 @@
     <div fxLayout="row wrap" fxLayoutAlign="space-around center" fxLayout.xs="column">
       <div *ngFor="let p of products; let i = index">
         <!--Gia na dwsw timi se object, einai [info]="p"-->
-        <app-product-card [id]="i" [info]="p"></app-product-card>
+        <app-product-card [index]="i" [info]="p"></app-product-card>
       </div>
     </div>
 

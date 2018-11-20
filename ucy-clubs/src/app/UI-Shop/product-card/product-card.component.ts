@@ -1,6 +1,8 @@
 import { Component, OnInit, Input, NgModule } from '@angular/core';
 import { Product_Merch } from '../Product_Merch';
+import { ItemInCart} from '../ItemInCart';
 import { DataService} from '../DataService';
+import { CartComponent } from '../cart/cart.component';
 
 @Component({
   selector: 'app-product-card',
@@ -8,7 +10,7 @@ import { DataService} from '../DataService';
   styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent implements OnInit {
-  @Input() id:Number;
+  @Input() index:Number;
   @Input() info:Product_Merch;
   
 
@@ -31,12 +33,11 @@ export class ProductCardComponent implements OnInit {
 
 
   addInCart(){
-    // Add information in array
-    console.log(this.id.toString());
-    console.log(this.info.title);
-    DataService.itemsInCart.push(this.id);
-    console.log(DataService.itemsInCart);
+    let item:ItemInCart = new ItemInCart(this.index,this.quantity,this.info);
+    DataService.itemsInCart.push(item);
+    CartComponent.updateTotal();
   }
+
 
 
   constructor() {
@@ -46,7 +47,6 @@ export class ProductCardComponent implements OnInit {
 
 
   ngOnInit() {
-    console.log(this.id);
     console.log(this.info);
     console.log(this.info.title);
   }

@@ -2,7 +2,7 @@ export class Product_Merch {
   
   title:string;
   club:string;
-  price:Number;
+  price:number;
   description:string;
   imageSrc:string;
 

@@ -1,0 +1,42 @@
+.product-card {
+  max-width: 200px;
+}
+
+
+
+.product_image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 20%;
+  bottom: 20%;
+  left: 0;
+  right: 0;
+  height: 60%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(54, 46, 46);
+}
+
+
+.container:hover .overlay {
+  opacity: 0.80;
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
