@@ -1,4 +1,7 @@
-  <div #vote>
+  <div #vote *ngIf="curProfile.voted; then alreadyVote; else voteNow">
+  </div>
+
+  <ng-template #voteNow>
     <h3>Make your vote</h3>
 
     <mat-selection-list  #hours [(ngModel)]="selectedOptions" (ngModelChange)="onVote($event)">
@@ -13,13 +16,10 @@
         </div>
       </div>
     </mat-selection-list>
-
-    <p>
-      Selected: {{ selectedOptions | json }}
-    </p>
-
     <button mat-raised-button (click)="onClickMe()">Submit vote</button>
-  </div>
+   </ng-template>
+
+    <ng-template #alreadyVote> You had already voted.</ng-template>
 
 
 
