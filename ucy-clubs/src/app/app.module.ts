@@ -6,6 +6,9 @@ import {FlexLayoutModule} from '@angular/flex-layout'
 import { FormsModule } from '@angular/forms';
 import {MatExpansionModule} from '@angular/material/expansion'
 import { MatListModule  } from '@angular/material/list'
+import {MatStepperModule} from '@angular/material/stepper';
+import {MatInputModule} from '@angular/material/input';
+import { MatToolbarModule } from '@angular/material/toolbar';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
@@ -25,6 +28,10 @@ import { SingUpComponent } from './sing-up/sing-up.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { SingupLoginComponent } from './singup-login/singup-login.component';
 
+import {ReactiveFormsModule} from '@angular/forms';
+import {MatCheckboxModule, MatTableModule, MatTabsModule} from '@angular/material';
+import { NewsComponent } from './news/news.component';
+
 
 
 
@@ -41,7 +48,8 @@ import { SingupLoginComponent } from './singup-login/singup-login.component';
     DanceClassesComponent,
     SingUpComponent,
     LogInComponent,
-    SingupLoginComponent
+    SingupLoginComponent,
+    NewsComponent
   ],
   imports: [
     BrowserModule,
@@ -53,7 +61,14 @@ import { SingupLoginComponent } from './singup-login/singup-login.component';
     FormsModule,
     MatExpansionModule,
     MatListModule,
-    MatButtonModule
+    MatButtonModule,
+    MatStepperModule,
+    MatInputModule,
+    MatToolbarModule,
+    ReactiveFormsModule,
+    MatCheckboxModule,
+    MatTableModule,
+    MatTabsModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent] 
