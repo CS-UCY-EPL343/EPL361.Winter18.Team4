@@ -3,7 +3,7 @@ export class DanceClass {
   availDays: AvailableHours[];
 }
 
-class AvailableHours {
+export class AvailableHours {
   day: string;
-  hours: number[];
+  hours: number;
 }

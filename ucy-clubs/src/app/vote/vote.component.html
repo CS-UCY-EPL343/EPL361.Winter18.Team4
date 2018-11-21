@@ -1,30 +1,24 @@
   <div #vote>
     <h3>Make your vote</h3>
 
-    <mat-accordion>
-      <mat-expansion-panel *ngFor="let dance of danceClasses">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            {{dance.name}}
-          </mat-panel-title>
-          <mat-panel-description>
+    <mat-selection-list  #hours [(ngModel)]="selectedOptions" (ngModelChange)="onVote($event)">
+      <div *ngFor="let dance of danceClasses">
 
-          </mat-panel-description>
-        </mat-expansion-panel-header>
+        <div id="name">
+          <p>{{dance.name}}:</p>
 
-        <div #hours>
-          <mat-selection-list >
-            <div *ngFor="let avail of dance.availDays">
-              <mat-list-option *ngFor="let hour of avail.hours">
-                  {{avail.day}} - {{hour + 9}}:00 - {{hour+9}}:59
-            </mat-list-option>
-            </div>
-          </mat-selection-list>
+          <mat-list-option *ngFor="let avail of dance.availDays" [value]="{name: dance.name, availDays: avail}">
+            {{avail.day}} at {{avail.hours+9}}:00 - {{avail.hours+9}}:59
+          </mat-list-option>
         </div>
-      </mat-expansion-panel>
-    </mat-accordion>
+      </div>
+    </mat-selection-list>
 
-    <button mat-raised-button>Submit vote</button>
+    <p>
+      Selected: {{ selectedOptions | json }}
+    </p>
+
+    <button mat-raised-button (click)="onClickMe()">Submit vote</button>
   </div>
 
 

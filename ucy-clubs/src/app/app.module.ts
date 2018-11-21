@@ -20,6 +20,7 @@ import { ProductInCartComponent } from './UI-Shop/product-in-cart/product-in-car
 import { DataService } from './UI-Shop/DataService'
 import { VoteComponent } from './vote/vote.component';
 import { DanceClassesComponent } from './dance-classes/dance-classes.component';
+import {MatButtonModule} from "@angular/material";
 
 
 
@@ -45,7 +46,8 @@ import { DanceClassesComponent } from './dance-classes/dance-classes.component';
     FlexLayoutModule,
     FormsModule,
     MatExpansionModule,
-    MatListModule
+    MatListModule,
+    MatButtonModule
   ],
   providers: [DataService],
   bootstrap: [AppComponent] 
