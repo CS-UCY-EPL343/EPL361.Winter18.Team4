@@ -22,6 +22,7 @@ import { VoteComponent } from './vote/vote.component';
 import { DanceClassesComponent } from './dance-classes/dance-classes.component';
 import {MatButtonModule} from "@angular/material";
 import { SingUpComponent } from './sing-up/sing-up.component';
+import { LogInComponent } from './log-in/log-in.component';
 
 
 
@@ -37,7 +38,8 @@ import { SingUpComponent } from './sing-up/sing-up.component';
     ProductInCartComponent,
     VoteComponent,
     DanceClassesComponent,
-    SingUpComponent
+    SingUpComponent,
+    LogInComponent
   ],
   imports: [
     BrowserModule,
