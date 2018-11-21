@@ -21,6 +21,7 @@ import { DataService } from './UI-Shop/DataService'
 import { VoteComponent } from './vote/vote.component';
 import { DanceClassesComponent } from './dance-classes/dance-classes.component';
 import {MatButtonModule} from "@angular/material";
+import { SingUpComponent } from './sing-up/sing-up.component';
 
 
 
@@ -35,7 +36,8 @@ import {MatButtonModule} from "@angular/material";
     ShopComponent,
     ProductInCartComponent,
     VoteComponent,
-    DanceClassesComponent
+    DanceClassesComponent,
+    SingUpComponent
   ],
   imports: [
     BrowserModule,
