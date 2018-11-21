@@ -1,3 +1,30 @@
-<p>
-  news works!
-</p>
+<mat-accordion>
+  <h1>
+    EVENTS AND ANNOUNCEMENTS
+  </h1>
+  <mat-expansion-panel *ngFor="let event of events">
+    <mat-expansion-panel-header [collapsedHeight]="'200px'" [expandedHeight]="'200px'" >
+      <div class="picture">
+        <img with="150" height="150" src={{event.img}}>
+      </div>
+      <div class="label">
+        <mat-panel-title >
+          {{event.title}}
+        </mat-panel-title>
+      </div>
+      <div class="description">
+        <mat-panel-description>
+          <div *ngFor="let details of event.details">
+            <br>{{details.day}}
+            <br>{{details.time}}
+            <br>{{details.where}}
+            <br>{{event.hosted}}
+          </div>
+
+        </mat-panel-description>
+      </div>
+    </mat-expansion-panel-header>
+    {{event.description}}
+  </mat-expansion-panel>
+
+</mat-accordion>

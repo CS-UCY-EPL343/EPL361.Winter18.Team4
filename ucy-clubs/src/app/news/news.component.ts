@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {EVENTSINFO} from "../mock-events";
 
 @Component({
   selector: 'app-news',
@@ -6,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./news.component.css']
 })
 export class NewsComponent implements OnInit {
-
+  events = EVENTSINFO;
+  panelOpenState = false;
   constructor() { }
 
   ngOnInit() {
