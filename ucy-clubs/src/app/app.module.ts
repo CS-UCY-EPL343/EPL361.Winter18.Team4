@@ -31,6 +31,7 @@ import { SingupLoginComponent } from './singup-login/singup-login.component';
 import {ReactiveFormsModule} from '@angular/forms';
 import {MatCheckboxModule, MatTableModule, MatTabsModule} from '@angular/material';
 import { NewsComponent } from './news/news.component';
+import { ClubsComponent } from './clubs/clubs.component';
 
 
 
@@ -49,7 +50,8 @@ import { NewsComponent } from './news/news.component';
     SingUpComponent,
     LogInComponent,
     SingupLoginComponent,
-    NewsComponent
+    NewsComponent,
+    ClubsComponent
   ],
   imports: [
     BrowserModule,
