@@ -34,6 +34,15 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {MatCheckboxModule, MatTableModule, MatTabsModule} from '@angular/material';
 import { NewsComponent } from './news/news.component';
 import { ClubsComponent } from './clubs/clubs.component';
+import { ContactUsDanceComponent } from './contact-us-dance/contact-us-dance.component';
+import { AboutUsDanceComponent } from './about-us-dance/about-us-dance.component';
+import { GalleryComponent } from './gallery/gallery.component';
+
+
+import {MatIconModule} from '@angular/material/icon';
+
+
+
 
 
 
@@ -56,7 +65,10 @@ import { ClubsComponent } from './clubs/clubs.component';
     LogInComponent,
     SingupLoginComponent,
     NewsComponent,
-    ClubsComponent
+    ClubsComponent,
+    ContactUsDanceComponent,
+    AboutUsDanceComponent,
+    GalleryComponent
   ],
   imports: [
     BrowserModule,
@@ -74,7 +86,8 @@ import { ClubsComponent } from './clubs/clubs.component';
     MatInputModule,
     MatToolbarModule,
     ReactiveFormsModule,
-    MatCheckboxModule
+    MatCheckboxModule,
+    MatIconModule
   ],
   entryComponents:
   [

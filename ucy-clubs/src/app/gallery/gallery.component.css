@@ -1,0 +1,17 @@
+.example-card {
+  max-width: 400px;
+  margin-top: 20px;
+  margin-left: 35px;
+  margin-bottom: 30px;
+
+}
+
+.example-header-image {
+
+  background-size: cover;
+}
+.card{
+  padding: 0;
+  width: 225px;
+  margin: 15px 15px 0 15px;
+}
