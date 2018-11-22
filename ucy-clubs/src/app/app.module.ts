@@ -40,6 +40,8 @@ import { GalleryComponent } from './gallery/gallery.component';
 
 
 import {MatIconModule} from '@angular/material/icon';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { ContactUsComponent } from './contact-us/contact-us.component';
 
 
 
@@ -68,7 +70,9 @@ import {MatIconModule} from '@angular/material/icon';
     ClubsComponent,
     ContactUsDanceComponent,
     AboutUsDanceComponent,
-    GalleryComponent
+    GalleryComponent,
+    AboutUsComponent,
+    ContactUsComponent
   ],
   imports: [
     BrowserModule,
