@@ -23,7 +23,7 @@ import { ProductInCartComponent } from './UI-Shop/product-in-cart/product-in-car
 
 import { DataService } from './UI-Shop/DataService'
 import { VoteComponent } from './vote/vote.component';
-import { DanceClassesComponent } from './dance-classes/dance-classes.component';
+
 import {MatButtonModule, MatDialogModule} from "@angular/material";
 import { DialogConfirmVoteComponent } from './vote/dialog-confirm-vote/dialog-confirm-vote.component';
 import { SingUpComponent } from './sing-up/sing-up.component';
@@ -34,6 +34,7 @@ import {ReactiveFormsModule} from '@angular/forms';
 import {MatCheckboxModule, MatTableModule, MatTabsModule} from '@angular/material';
 import { NewsComponent } from './news/news.component';
 import { ClubsComponent } from './clubs/clubs.component';
+import { DanceClubComponent } from './dance-club/dance-club.component';
 import { ContactUsDanceComponent } from './contact-us-dance/contact-us-dance.component';
 import { AboutUsDanceComponent } from './about-us-dance/about-us-dance.component';
 import { GalleryComponent } from './gallery/gallery.component';
@@ -53,21 +54,19 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
   declarations: [
     AppComponent,
     routingComponents,
-
     ProductCardComponent,
     ProductsCatalogueComponent,
     CartComponent,
     ProductsInCartComponent,
     ProductInCartComponent,
     VoteComponent,
-    DanceClassesComponent,
     DialogConfirmVoteComponent,
-    DanceClassesComponent,
     SingUpComponent,
     LogInComponent,
     SingupLoginComponent,
     NewsComponent,
     ClubsComponent,
+    DanceClubComponent,
     ContactUsDanceComponent,
     AboutUsDanceComponent,
     GalleryComponent,
