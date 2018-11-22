@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
 
+
 @Component({
   selector: 'app-sing-up',
   templateUrl: './sing-up.component.html',
@@ -14,24 +15,28 @@ export class SingUpComponent implements OnInit {
   thirdFormGroup: FormGroup;
   fourthFormGroup: FormGroup;
   fifthFormGroup: FormGroup;
+  sixFormGroup: FormGroup;
   constructor(private _formBuilder: FormBuilder) {
   }
 
   ngOnInit() {
     this.firstFormGroup = this._formBuilder.group({
-      firstCtrl: ['', Validators.required]
+      FirstName: ['', Validators.required]
     });
     this.secondFormGroup = this._formBuilder.group({
-      secondCtrl: ['', Validators.required]
+      LastName: ['', Validators.required]
     });
     this.thirdFormGroup = this._formBuilder.group({
-      thirdCtrl: ['', Validators.required]
+      Email: ['', Validators.required]
     });
     this.fourthFormGroup = this._formBuilder.group({
-      fourthCtrl: ['', Validators.required]
+      Telephone: ['', Validators.required]
     });
     this.fifthFormGroup = this._formBuilder.group({
-      fifthCtrl: ['', Validators.required]
+      Password: ['', Validators.required]
+    });
+    this.sixFormGroup = this._formBuilder.group({
+      RPassword: ['', Validators.required]
     });
 
   }

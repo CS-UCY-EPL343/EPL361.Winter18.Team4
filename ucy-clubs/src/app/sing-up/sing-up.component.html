@@ -6,20 +6,31 @@
 <mat-horizontal-stepper [linear]="!isLinear" #stepper>
   <mat-step [stepControl]="firstFormGroup">
     <form [formGroup]="firstFormGroup">
-      <ng-template matStepLabel>Fill out your name</ng-template>
+      <ng-template matStepLabel>Fill out your first name </ng-template>
       <mat-form-field>
-        <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required>
+        <input matInput placeholder="First name" formControlName="FirstName" required>
+      </mat-form-field>
+      <div>
+        <button mat-button matStepperNext (click)="onGoNext()">Next</button>
+      </div>
+    </form>
+  </mat-step>
+  <mat-step [stepControl]="secondFormGroup">
+    <form [formGroup]="secondFormGroup">
+      <ng-template matStepLabel>Fill out your last name</ng-template>
+      <mat-form-field>
+        <input matInput placeholder="Last name" formControlName="LastName" required>
       </mat-form-field>
       <div>
         <button mat-button matStepperNext>Next</button>
       </div>
     </form>
   </mat-step>
-  <mat-step [stepControl]="secondFormGroup">
-    <form [formGroup]="secondFormGroup">
+  <mat-step [stepControl]="thirdFormGroup">
+    <form [formGroup]="thirdFormGroup">
       <ng-template matStepLabel>Fill out your email</ng-template>
       <mat-form-field>
-        <input matInput placeholder="Email" formControlName="secondCtrl" required pattern="[a-zA-Z0-9.-_]{1,}@ucy.ac.cy">
+        <input matInput placeholder="Email" formControlName="Email" required pattern="[a-zA-Z0-9.-_]{1,}@ucy.ac.cy">
         <mat-error>
           Please provide correct email
         </mat-error>
@@ -30,11 +41,11 @@
       </div>
     </form>
   </mat-step>
-  <mat-step [stepControl]="thirdFormGroup">
-    <form [formGroup]="thirdFormGroup">
+  <mat-step [stepControl]="fourthFormGroup">
+    <form [formGroup]="fourthFormGroup">
       <ng-template matStepLabel>Fill out your telephone</ng-template>
       <mat-form-field>
-        <input matInput placeholder="Telephone" formControlName="thirdCtrl" required  pattern="^[0-9]*$" minlength="8">
+        <input matInput placeholder="Telephone" formControlName="Telephone" required  pattern="^[0-9]*$" minlength="8">
         <mat-error>
           Please provide correct telephone
         </mat-error>
@@ -44,22 +55,22 @@
       </div>
     </form>
   </mat-step>
-  <mat-step [stepControl]="fourthFormGroup">
-    <form [formGroup]="fourthFormGroup">
+  <mat-step [stepControl]="fifthFormGroup">
+    <form [formGroup]="fifthFormGroup">
       <ng-template matStepLabel>Fill out your password</ng-template>
       <mat-form-field>
-        <input matInput placeholder="Password" formControlName="fourthCtrl" required >
+        <input matInput type="password" placeholder="Password" formControlName="Password" required >
       </mat-form-field>
       <div>
         <button mat-button matStepperNext>Next</button>
       </div>
     </form>
   </mat-step>
-  <mat-step [stepControl]="fifthFormGroup">
-    <form [formGroup]="fifthFormGroup">
+  <mat-step [stepControl]="sixFormGroup">
+    <form [formGroup]="sixFormGroup">
       <ng-template matStepLabel>Repeat your password</ng-template>
       <mat-form-field>
-        <input matInput placeholder="RPassword" formControlName="fifthCtrl" required  >
+        <input matInput type="password" placeholder="RPassword" formControlName="RPassword" required  >
       </mat-form-field>
       <div>
         <button mat-button matStepperNext>Next</button>
