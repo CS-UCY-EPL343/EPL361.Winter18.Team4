@@ -4,28 +4,13 @@ html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
 /* Master Styles */
-h1 {
-  color: #369; 
-  font-family: Arial, Helvetica, sans-serif;   
-  font-size: 250%;
-}
-h2, h3 { 
-  color: #444;
-  font-family: Arial, Helvetica, sans-serif;   
-  font-weight: lighter;
-}
-body { 
-  margin: 2em; 
-}
-body, input[text], button { 
-  color: #888; 
-  font-family: Cambria, Georgia; 
-}
-a {
+
+
+.menu-tabs a {
   cursor: pointer;
   cursor: hand;
 }
-button {
+.menu-tabs button {
   font-family: Arial;
   background-color: #eee;
   border: none;
@@ -34,17 +19,17 @@ button {
   cursor: pointer;
   cursor: hand;
 }
-button:hover {
+.menu-tabs button:hover {
   background-color: #cfd8dc;
 }
-button:disabled {
+.menu-tabs button:disabled {
   background-color: #eee;
   color: #aaa; 
   cursor: auto;
 }
 
 /* Navigation link styles */
-nav a {
+.menu-tabs nav a {
   padding: 5px 10px;
   text-decoration: none;
   margin-top: 10px;
@@ -52,25 +37,25 @@ nav a {
   background-color: #eee;
   border-radius: 4px;
 }
-nav a:visited, a:link {
+.menu-tabs nav a:visited, a:link {
   color: #607D8B;
 }
-nav a:hover {
+.menu-tabs nav a:hover {
   color: #039be5;
   background-color: #CFD8DC;
 }
-nav a.active {
+.menu-tabs nav a.active {
   color: #039be5;
 }
 
 /* items class */
-.items {
+.menu-tabs .items {
   margin: 0 0 2em 0;
   list-style-type: none;
   padding-left: 0;
   width: 10em;
 }
-.items li {
+.menu-tabs .items li {
   cursor: pointer;
   position: relative;
   left: 0;
@@ -80,22 +65,22 @@ nav a.active {
   height: 1.6em;
   border-radius: 4px;
 }
-.items li:hover {
+.menu-tabs .items li:hover {
   color: #607D8B;
   background-color: #DDD;
   left: .1em;
 }
-.items li.selected:hover {
+.menu-tabs .items li.selected:hover {
   background-color: #BBD8DC;
   color: white;
 }
 
-.items .text {
+.menu-tabs .items .text {
   position: relative;
   top: -3px;
 }
 
-.items li {
+.menu-tabs .items li {
   cursor: pointer;
   position: relative;
   left: 0;
@@ -106,7 +91,7 @@ nav a.active {
   border-radius: 4px;
 }
 
-.items .badge {
+.menu-tabs .items .badge {
   display: inline-block;
   font-size: small;
   color: white;
@@ -120,11 +105,7 @@ nav a.active {
   margin-right: .8em;
   border-radius: 4px 0 0 4px;
 }
-.items li.selected {
+.menu-tabs .items li.selected {
   background-color: #CFD8DC;
   color: white;
-}
-/* everywhere else */
-* { 
-  font-family: Arial, Helvetica, sans-serif; 
 }
