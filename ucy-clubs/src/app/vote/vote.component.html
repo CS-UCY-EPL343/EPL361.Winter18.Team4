@@ -1,7 +1,11 @@
-  <div #vote>
-    <h3>Make your vote</h3>
+  <div #vote *ngIf="curProfile.voted; then alreadyVote; else voteNow">
+  </div>
 
-    <mat-selection-list  #hours [(ngModel)]="selectedOptions" (ngModelChange)="onVote($event)">
+  <ng-template #voteNow>
+    <mat-card>
+      <mat-card-title>Make your vote</mat-card-title>
+
+    <mat-selection-list  #avhours [(ngModel)]="selectedOptions" (ngModelChange)="onVote($event)">
       <div *ngFor="let dance of danceClasses">
 
         <div id="name">
@@ -12,14 +16,14 @@
           </mat-list-option>
         </div>
       </div>
+
     </mat-selection-list>
-
-    <p>
-      Selected: {{ selectedOptions | json }}
-    </p>
-
     <button mat-raised-button (click)="onClickMe()">Submit vote</button>
-  </div>
+    </mat-card>
+  </ng-template>
+
+    <ng-template #alreadyVote> Your vote will be considered. Thanks
+    for voting</ng-template>
 
 
 

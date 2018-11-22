@@ -24,6 +24,8 @@ import { ProductInCartComponent } from './UI-Shop/product-in-cart/product-in-car
 import { DataService } from './UI-Shop/DataService'
 import { VoteComponent } from './vote/vote.component';
 import { DanceClassesComponent } from './dance-classes/dance-classes.component';
+import {MatButtonModule, MatDialogModule} from "@angular/material";
+import { DialogConfirmVoteComponent } from './vote/dialog-confirm-vote/dialog-confirm-vote.component';
 import {MatButtonModule} from "@angular/material";
 import { SingUpComponent } from './sing-up/sing-up.component';
 import { LogInComponent } from './log-in/log-in.component';
@@ -48,6 +50,8 @@ import { ClubsComponent } from './clubs/clubs.component';
     ProductInCartComponent,
     VoteComponent,
     DanceClassesComponent,
+    DialogConfirmVoteComponent,
+    DanceClassesComponent,
     SingUpComponent,
     LogInComponent,
     SingupLoginComponent,
@@ -64,6 +68,12 @@ import { ClubsComponent } from './clubs/clubs.component';
     FormsModule,
     MatExpansionModule,
     MatListModule,
+    MatButtonModule,
+    MatDialogModule
+  ],
+  entryComponents:
+  [
+    DialogConfirmVoteComponent,
     MatButtonModule,
     MatStepperModule,
     MatInputModule,
