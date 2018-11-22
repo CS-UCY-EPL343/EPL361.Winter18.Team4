@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import {MatCardModule} from '@angular/material/card';
-import {MatGridListModule} from '@angular/material/grid-list';
+
 import {FlexLayoutModule} from '@angular/flex-layout'
 import { FormsModule } from '@angular/forms';
 import {MatExpansionModule} from '@angular/material/expansion'
@@ -9,6 +9,7 @@ import { MatListModule  } from '@angular/material/list'
 import {MatStepperModule} from '@angular/material/stepper';
 import {MatInputModule} from '@angular/material/input';
 import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatGridListModule} from '@angular/material/grid-list';
 
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './/app-routing.module';
