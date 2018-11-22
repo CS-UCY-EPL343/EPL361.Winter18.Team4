@@ -1,31 +1,29 @@
-  <div #vote>
-    <h3>Make your vote</h3>
-
-    <mat-accordion>
-      <mat-expansion-panel *ngFor="let dance of danceClasses">
-        <mat-expansion-panel-header>
-          <mat-panel-title>
-            {{dance.name}}
-          </mat-panel-title>
-          <mat-panel-description>
-
-          </mat-panel-description>
-        </mat-expansion-panel-header>
-
-        <div #hours>
-          <mat-selection-list >
-            <div *ngFor="let avail of dance.availDays">
-              <mat-list-option *ngFor="let hour of avail.hours">
-                  {{avail.day}} - {{hour + 9}}:00 - {{hour+9}}:59
-            </mat-list-option>
-            </div>
-          </mat-selection-list>
-        </div>
-      </mat-expansion-panel>
-    </mat-accordion>
-
-    <button mat-raised-button>Submit vote</button>
+  <div #vote *ngIf="curProfile.voted; then alreadyVote; else voteNow">
   </div>
+
+  <ng-template #voteNow>
+    <mat-card>
+      <mat-card-title>Make your vote</mat-card-title>
+
+    <mat-selection-list  #avhours [(ngModel)]="selectedOptions" (ngModelChange)="onVote($event)">
+      <div *ngFor="let dance of danceClasses">
+
+        <div id="name">
+          <p>{{dance.name}}:</p>
+
+          <mat-list-option *ngFor="let avail of dance.availDays" [value]="{name: dance.name, availDays: avail}">
+            {{avail.day}} at {{avail.hours+9}}:00 - {{avail.hours+9}}:59
+          </mat-list-option>
+        </div>
+      </div>
+
+    </mat-selection-list>
+    <button mat-raised-button (click)="onClickMe()">Submit vote</button>
+    </mat-card>
+  </ng-template>
+
+    <ng-template #alreadyVote> Your vote will be considered. Thanks
+    for voting</ng-template>
 
 
 

@@ -1,6 +1,20 @@
-button{
-  margin-top: 10px;
-  margin-bottom: 100px;
-  margin-right: 150px;
-  margin-left: 80px;
+button {
+  margin: 20px 50px 10px 20px;
+  background-color: rgba(40, 80, 50, 0.2);
+}
+#name{
+  border-left: 3px solid red;
+}
+mat-selection-list{
+  width: 46%;
+}
+p{
+  border-bottom: 2px solid black;
+  padding: 10px 20px 3px 20px;
+  margin-right: 5px;
+  margin-left: 3px;
+}
+
+.vote{
+  float: left;
 }

@@ -1,9 +1,14 @@
+import {strict} from "assert";
+
 export class DanceClass {
   name: string;
   availDays: AvailableHours[];
+
 }
 
-class AvailableHours {
+export class AvailableHours {
   day: string;
-  hours: number[];
+  hours: number;
+
+
 }
