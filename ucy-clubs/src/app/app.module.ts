@@ -8,7 +8,7 @@ import {MatExpansionModule} from '@angular/material/expansion'
 import { MatListModule  } from '@angular/material/list'
 
 import { AppComponent } from './app.component';
-import { AppRoutingModule } from './/app-routing.module';
+import { AppRoutingModule, routingComponents } from './/app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ProductCardComponent } from './UI-Shop/product-card/product-card.component';
 import { ProductsCatalogueComponent } from './UI-Shop/products-catalogue/products-catalogue.component';
@@ -27,11 +27,12 @@ import { DanceClassesComponent } from './dance-classes/dance-classes.component';
 @NgModule({
   declarations: [
     AppComponent,
+    routingComponents,
+
     ProductCardComponent,
     ProductsCatalogueComponent,
     CartComponent,
     ProductsInCartComponent,
-    ShopComponent,
     ProductInCartComponent,
     VoteComponent,
     DanceClassesComponent
