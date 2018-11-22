@@ -25,19 +25,19 @@ export class VoteComponent implements OnInit {
   };
   danceClasses = DANCECLASSES;
   selectedOptions: DanceClass[];
-  constructor(public dialog: MatDialog) { }
+  constructor(public dialog: MatDialog) {
+  }
 
   ngOnInit() {
   }
 
   onVote(change : MatSelectionListChange) {
-    console.log("I hate myself");
-
   }
+
   onClickMe(): void {
-    const dialogRef = this.dialog.open(DialogConfirmVoteComponent, {
-      width: '30%',
-      data: {name: this.curProfile.name, vote: this.selectedOptions}
+
+    let dialogRef = this.dialog.open(DialogConfirmVoteComponent, {
+      data: {user: this.curProfile ,vote: this.selectedOptions}
     });
     dialogRef.afterClosed().subscribe(result => {
       console.log('The dialog was closed', result);

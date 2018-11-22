@@ -1,10 +1,15 @@
-<h1 mat-dialog-title>{{data.name}}, you have votes are:</h1>
-<div mat-dialog-content *ngFor="let v of data.vote">
-  {{v.name }}: {{v.availDays.toString()}}
+<h1 mat-dialog-title>{{data.user['name']}}, Confirm your votes:</h1>
+<div mat-dialog-content >
+    <ul>
+  <li *ngFor="let dance of data.vote">
+    {{dance.name}}: {{dance.availDays['day']}} at
+    {{dance.availDays['hours']+9}}:00 - {{dance.availDays['hours']+9}}:59
 
+  </li>
 
+    </ul>
 </div>
-  <div mat-dialog-actions>
+ <div mat-dialog-actions>
   <button mat-button (click)="onNoClick()">Cancel</button>
-  <button mat-button >Submit vote</button>
+  <button mat-button (click)="onSubmitVote()">Submit vote</button>
   </div>
