@@ -26,7 +26,6 @@ import { VoteComponent } from './vote/vote.component';
 import { DanceClassesComponent } from './dance-classes/dance-classes.component';
 import {MatButtonModule, MatDialogModule} from "@angular/material";
 import { DialogConfirmVoteComponent } from './vote/dialog-confirm-vote/dialog-confirm-vote.component';
-import {MatButtonModule} from "@angular/material";
 import { SingUpComponent } from './sing-up/sing-up.component';
 import { LogInComponent } from './log-in/log-in.component';
 import { SingupLoginComponent } from './singup-login/singup-login.component';
@@ -69,19 +68,17 @@ import { ClubsComponent } from './clubs/clubs.component';
     MatExpansionModule,
     MatListModule,
     MatButtonModule,
-    MatDialogModule
-  ],
-  entryComponents:
-  [
-    DialogConfirmVoteComponent,
-    MatButtonModule,
+    MatDialogModule,
     MatStepperModule,
     MatInputModule,
     MatToolbarModule,
     ReactiveFormsModule,
-    MatCheckboxModule,
-    MatTableModule,
-    MatTabsModule
+    MatCheckboxModule
+  ],
+  entryComponents:
+  [
+    DialogConfirmVoteComponent
+
   ],
   providers: [DataService],
   bootstrap: [AppComponent] 
