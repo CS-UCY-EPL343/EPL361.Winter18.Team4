@@ -47,7 +47,8 @@ import { HomeComponent } from './home/home.component';
 
 
 
-
+import {SlideshowModule} from 'ng-simple-slideshow';
+import { SlideshowComponent } from './slideshow/slideshow.component';
 
 
 
@@ -73,7 +74,8 @@ import { HomeComponent } from './home/home.component';
     GalleryComponent,
     AboutUsComponent,
     ContactUsComponent,
-    HomeComponent
+    HomeComponent,
+    SlideshowComponent
   ],
   imports: [
     BrowserModule,
@@ -92,7 +94,8 @@ import { HomeComponent } from './home/home.component';
     MatToolbarModule,
     ReactiveFormsModule,
     MatCheckboxModule,
-    MatIconModule
+    MatIconModule,
+    SlideshowModule,
   ],
   entryComponents:
   [
