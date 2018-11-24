@@ -2,7 +2,13 @@
   max-width: 200px;
 }
 
+.price{
+  text-align: center;
+}
 
+input{
+  text-align: center;
+}
 
 .product_image {
   display: block;

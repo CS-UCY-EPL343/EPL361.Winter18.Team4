@@ -15,10 +15,10 @@ in products-in-cart, as product-in-cart-->
     </div>
     <!--THIRD PART-->
     <div fxFlex="10" fxLayout="column">
-        <button mat-button (click)="removeItem(item)" >x</button>
-        <button mat-button (click)="increaseQuantity()">+</button>
+        <button fxFlex="33" mat-button (click)="removeItem(item)" >x</button>
+        <button fxFlex="33" mat-button (click)="increaseQuantity()">+</button>
         <input type="text" disabled="disabled" class="form-control"  [(ngModel)]="quantity" required/>
-        <button mat-button (click)="decreaseQuantity()">-</button>
+        <button fxFlex="33" mat-button (click)="decreaseQuantity()">-</button>
     </div>
   </div>
 </mat-card>

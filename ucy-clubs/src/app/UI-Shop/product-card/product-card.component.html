@@ -21,17 +21,16 @@
 
 
   <mat-card-content>
-    <div class="price"> {{ info.price }} </div>
+    <div class="price"> {{ info.price }}€ </div>
   </mat-card-content>
 
   <mat-card-actions>
-    <div fxLayout="row wrap">
-      <button fxFlex="25" mat-button (click)="decreaseQuantity()">-</button>
-      <input fxFlex="25" type="text" disabled="disabled" class="form-control"  [(ngModel)]="quantity" required/>
-      <button mat-button fxFlex="25" (click)="increaseQuantity()">+</button>
-      <button fxFlex="25" mat-button (click)="addInCart()">Add</button>
+    <div fxLayout="row" fxLayoutAlign="start center">
+      <button fxFlex="33" mat-button (click)="decreaseQuantity()">-</button>
+      <input  fxFlex="33" type="text" disabled="disabled" class="form-control"  [(ngModel)]="quantity" required/>
+      <button fxFlex="33" mat-button (click)="increaseQuantity()">+</button>
     </div>
-
+    <button fxFill mat-raised-button (click)="addInCart()">Add To Cart</button>
 
   </mat-card-actions>
 </mat-card>
