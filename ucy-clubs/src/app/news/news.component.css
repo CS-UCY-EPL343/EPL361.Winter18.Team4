@@ -1,7 +1,6 @@
 .news_style{
-  background-image: url("../../assets/Backgrounds/background.jpg");
-  background-repeat: repeat-x;
-  background-size:auto;
+/*  background-image: url("../../assets/Backgrounds/background.jpg");*/
+  background-size:50%;
 }
 .picture img {
   float: left;
@@ -9,9 +8,8 @@
 }
 
 #hi{
-  background-image: url("../../assets/Backgrounds/background.jpg");
-  background-repeat: repeat-x;
-  background-size:auto;
+/*  background-image: url("../../assets/Backgrounds/background.jpg");*/
+  background-size:50%;
 
 }
 .label mat-panel-title {
@@ -23,7 +21,7 @@
 }
 
 mat-expansion-panel{
-  background-image: url("../../assets/Backgrounds/background.jpg");
+/*  background-image: url("../../assets/Backgrounds/background.jpg");*/
   background-size:auto;
   color: black;
 

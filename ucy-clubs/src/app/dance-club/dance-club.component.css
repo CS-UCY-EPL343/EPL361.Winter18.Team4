@@ -1,0 +1,30 @@
+.picture{
+  text-align: right;
+}
+.Title{
+  text-align: center;
+  color: gray;
+  font-family:"Times New Roman",Times New Roman, serif;
+}
+
+.label mat-panel-title {
+  float: right;
+  padding: 0 20px 20px 0;
+  width: 500px;
+  size: 200px;
+  font-size: 2em;
+}
+
+mat-expansion-panel{
+/*  background-image: url("../../assets/Backgrounds/background.jpg"); */
+  background-size:auto;
+  color: black;
+
+}
+.description mat-panel-description {
+  color: black;
+  text-align: right;
+  text-align-last: right;
+  text-after-overflow: right;
+}
+

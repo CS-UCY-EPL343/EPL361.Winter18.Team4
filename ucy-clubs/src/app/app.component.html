@@ -3,19 +3,18 @@
 <h1 class="Title" fxFlex="70">
 UNIVERSITY OF CYPRUS STUDENTS CLUBS
 </h1>
-
 <div class="picture" fxFlex="30">
   <img with="150" height="150" src="assets/Logos/SEOPK_transparent.png">
 </div>
 </div>
 
 <div class="menu-tabs">
-  <nav>
-    <a routerLink="/home" routerLinkActive="active">Home</a>
-    <a routerLink="/clubs" routerLinkActive="active">Clubs</a>
-    <a routerLink="/news" routerLinkActive="active">News</a>
-    <a routerLink="/e-shop" routerLinkActive="active">e-Shop</a>
-    <a routerLink="/sign-up-log-in" routerLinkActive="active">Login-Singup</a>
+  <nav fxLayout="row wrap" fxLayout.xs="column">
+    <button mat-raised-button fxFlex="20" routerLink="/home" routerLinkActive="active">Home</button>
+    <button mat-raised-button fxFlex="20" routerLink="/clubs" routerLinkActive="active">Clubs</button>
+    <button mat-raised-button fxFlex="20" routerLink="/news" routerLinkActive="active">News</button>
+    <button mat-raised-button fxFlex="20" routerLink="/e-shop" routerLinkActive="active">e-Shop</button>
+    <button mat-raised-button fxFlex="20" routerLink="/sign-up-log-in" routerLinkActive="active">Login-Singup</button>
   </nav>
 </div>
 <router-outlet></router-outlet>

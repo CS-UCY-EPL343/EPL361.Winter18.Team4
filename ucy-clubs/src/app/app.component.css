@@ -1,37 +1,32 @@
+
+/* You can add global styles to this file, and also import other style files */
 .picture{
   text-align: right;
 }
 .Title{
-   text-align: center;
-  color: chocolate;
-   font-family:"Comic Sans MS", Comic Sans MS, serif;
- }
-
-html, body { height: 100%; }
-body {
-  background-image: url("../assets/Backgrounds/background.jpg");
-  background-repeat: repeat-x;
-  background-size:auto;
-  margin: 0;
+  text-align: center;
+  color: gray;
+  font-family:"Times New Roman",Times New Roman, serif;
 }
+
 /* Master Styles */
 
-.menu-tabs a {
+.menu-tabs button {
   cursor: pointer;
   cursor: hand;
-
 }
 .menu-tabs button {
-  font-family: Arial;
+  font-family: "Times New Roman";
+  color: white;
+  font-size: large;
   background-color: #eee;
-  border: none;
   padding: 5px 10px;
   border-radius: 4px;
   cursor: pointer;
   cursor: hand;
 }
 .menu-tabs button:hover {
-  background-color: #cfd8dc;
+  background-color: white;
 }
 .menu-tabs button:disabled {
   background-color: #eee;
@@ -40,23 +35,30 @@ body {
 }
 
 /* Navigation link styles */
-.menu-tabs nav a {
-  padding: 5px 10px;
-  text-decoration: none;
+/*Meny bar -options*/
+.menu-tabs nav button {
+  padding: 5px 20px;
+  text-decoration: gray;
   margin-top: 10px;
   display: inline-block;
-  background-color: #eee;
-  border-radius: 4px;
+  background-color: gray;
+  border-color:white;
 }
-.menu-tabs nav a:visited, a:link {
-  color: #607D8B;
+.menu-tabs nav button:visited, a:link {
+  font-family: "Times New Roman";
+  font-size: large;
+  color: white;
+  text-align: center;
 }
-.menu-tabs nav a:hover {
-  color: #039be5;
-  background-color: #CFD8DC;
+/*aman valeis to mouse panw*/
+.menu-tabs nav button:hover {
+  color: gray;
+  background-color: white;
+
 }
-.menu-tabs nav a.active {
-  color: #039be5;
+/*active button*/
+.menu-tabs nav button.active {
+  color: black;
 }
 
 /* items class */
@@ -76,13 +78,15 @@ body {
   height: 1.6em;
   border-radius: 4px;
 }
+
 .menu-tabs .items li:hover {
-  color: #607D8B;
+  color: gray;
   background-color: #DDD;
   left: .1em;
 }
+
 .menu-tabs .items li.selected:hover {
-  background-color: #BBD8DC;
+  background-color: gray;
   color: white;
 }
 
@@ -96,6 +100,7 @@ body {
   position: relative;
   left: 0;
   background-color: #EEE;
+  color: gray;
   margin: .5em;
   padding: .3em;
   height: 1.6em;
@@ -107,7 +112,7 @@ body {
   font-size: small;
   color: white;
   padding: 0.8em 0.7em 0 0.7em;
-  background-color: #607D8B;
+  background-color: gray;
   line-height: 1em;
   position: relative;
   left: -1px;
@@ -117,6 +122,6 @@ body {
   border-radius: 4px 0 0 4px;
 }
 .menu-tabs .items li.selected {
-  background-color: #CFD8DC;
-  color: white;
+  background-color: white;
+  color: gray;
 }
