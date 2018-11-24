@@ -10,11 +10,11 @@ import { AppComponent } from './app.component';
 import { AboutUsDanceComponent } from './about-us-dance/about-us-dance.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { ContactUsDanceComponent } from './contact-us-dance/contact-us-dance.component';
-
+import {SlideshowComponent} from "./slideshow/slideshow.component";
 
 
 const routes: Routes = [
-  {path: 'home', component: AppComponent},
+  {path: 'home',  component: SlideshowComponent},
   {path: 'e-shop', component: ShopComponent},
   {path: 'news', component: NewsComponent},
   {path: 'clubs', component: ClubsComponent},
@@ -39,4 +39,4 @@ const routes: Routes = [
 })
 export class AppRoutingModule { }
 export const routingComponents = [ShopComponent, NewsComponent, ClubsComponent, SingupLoginComponent,
-             DanceClubComponent, VoteComponent, GalleryComponent, AboutUsDanceComponent, ContactUsDanceComponent]
+             DanceClubComponent, VoteComponent, GalleryComponent, AboutUsDanceComponent, ContactUsDanceComponent,SlideshowComponent]
