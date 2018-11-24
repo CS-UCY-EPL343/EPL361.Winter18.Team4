@@ -16,3 +16,7 @@
   background-color:rgb(108, 110, 131);
   color: white;
 }
+
+button:hover {
+  background-color: gray;
+}

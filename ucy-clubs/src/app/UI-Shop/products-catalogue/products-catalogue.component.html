@@ -1,6 +1,6 @@
 
 <mat-card>
-    <div fxLayout="row wrap" fxLayoutAlign="space-around center" fxLayout.xs="column">
+    <div fxLayout="row wrap" fxLayoutAlign="space-between start" fxLayout.xs="column">
         <div *ngFor="let p of products; let i = index">
           <!--Gia na dwsw timi se object, einai [info]="p"-->
           <app-product-card [index]="i" [info]="p"></app-product-card>

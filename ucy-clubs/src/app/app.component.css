@@ -31,7 +31,6 @@
 .menu-tabs nav button:hover {
   color: gray;
   background-color: white;
-
 }
 /*active button*/
 .menu-tabs nav button.active {
@@ -51,12 +50,12 @@
 }
 
 .footer {
+  height:50px;
   left: 0;
   bottom: 0;
   width: 100%;
   background-color: rgb(100, 91, 91);
   color: white;
-  text-align: center;
 }
 
 .Title{

@@ -1,0 +1,8 @@
+button{
+  width: 50%
+}
+
+/*aman valeis to mouse panw*/
+button:hover {
+  background-color: gray;
+}
