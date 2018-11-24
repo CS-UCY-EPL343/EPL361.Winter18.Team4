@@ -1,10 +1,17 @@
-<h2> Dance Club (Place something nice here also)</h2>
+<div fxLayout="row wrap" >
+  <h1 class="Title" fxFlex="70">
+    UNIVERSITY OF CYPRUS DANCE CLUB
+  </h1>
+  <div class="picture" fxFlex="30">
+    <img with="150" height="150" src="assets/Logos/logoNew.png">
+  </div>
+</div>
 <div class="menu-tabs">
-    <nav>
-        <a routerLink="About-us" routerLinkActive="active">About-us</a>
-        <a routerLink="Gallery" routerLinkActive="active">Gallery</a>
-        <a routerLink="Vote" routerLinkActive="active">Vote</a>
-        <a routerLink="Contact-us" routerLinkActive="active">Contact-us</a>
+    <nav fxLayout="row wrap" fxLayout.xs="column">
+        <button mat-raised-button fxFlex="25" routerLink="Gallery" routerLinkActive="active">Gallery</button>
+        <button mat-raised-button fxFlex="25" routerLink="About-us" routerLinkActive="active">About-Us</button>
+        <button mat-raised-button fxFlex="25" routerLink="Vote" routerLinkActive="active">Vote</button>
+        <button mat-raised-button fxFlex="25" routerLink="Contact-us" routerLinkActive="active">Contact-Us</button>
     </nav>
 </div>
 

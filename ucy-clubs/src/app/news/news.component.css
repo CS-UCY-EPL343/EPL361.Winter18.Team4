@@ -1,6 +1,16 @@
+.news_style{
+/*  background-image: url("../../assets/Backgrounds/background.jpg");*/
+  background-size:50%;
+}
 .picture img {
   float: left;
   padding: 0 20px 20px 0;
+}
+
+#hi{
+/*  background-image: url("../../assets/Backgrounds/background.jpg");*/
+  background-size:50%;
+
 }
 .label mat-panel-title {
   float: right;
@@ -9,8 +19,30 @@
   size: 200px;
   font-size: 2em;
 }
+
+mat-expansion-panel{
+/*  background-image: url("../../assets/Backgrounds/background.jpg");*/
+  background-size:auto;
+  color: black;
+
+}
 .description mat-panel-description {
-  float: right;
-  padding: 0 500px 100px 0;
+  color: black;
+  text-align: right;
+  text-align-last: right;
+  text-after-overflow: right;
 }
 
+.description{
+  text-align: left;
+  width:30%;
+}
+.title{
+  text-align: center;
+  text-align-last: center;
+  width:33%;
+}
+.picture{
+  text-align: left;
+  width:33%;
+}
