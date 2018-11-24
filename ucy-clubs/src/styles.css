@@ -1,5 +1,6 @@
 html, body { height: 100%; }
 body {
-  background-image: url("assets/Backgrounds/background.jpg");
+  /*background-image: url("assets/Backgrounds/background.jpg");*/
+  background-color: rgb(184, 163, 133);
   background-repeat: repeat;
 }

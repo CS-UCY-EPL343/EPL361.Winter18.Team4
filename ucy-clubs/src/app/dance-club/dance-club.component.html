@@ -1,18 +1,25 @@
-<div fxLayout="row wrap" >
-  <h1 class="Title" fxFlex="70">
-    UNIVERSITY OF CYPRUS DANCE CLUB
-  </h1>
-  <div class="picture" fxFlex="30">
-    <img with="150" height="150" src="assets/Logos/logoNew.png">
-  </div>
-</div>
-<div class="menu-tabs">
-    <nav fxLayout="row wrap" fxLayout.xs="column">
-        <button mat-raised-button fxFlex="25" routerLink="Gallery" routerLinkActive="active">Gallery</button>
-        <button mat-raised-button fxFlex="25" routerLink="About-us" routerLinkActive="active">About-Us</button>
-        <button mat-raised-button fxFlex="25" routerLink="Vote" routerLinkActive="active">Vote</button>
-        <button mat-raised-button fxFlex="25" routerLink="Contact-us" routerLinkActive="active">Contact-Us</button>
-    </nav>
+
+
+<div fxLayout="row">
+    <div class="menu-tabs2" fxFlex="10" fxLayout.xs="column">
+        <nav fxLayout="column">
+            <div class="currClub">
+                <div class="clubTitle">Dance Club</div>
+                <img with="100" height="100" src="assets/Logos/logoNew.png">
+            </div>
+            <button mat-raised-button class="enrollButton">Enroll!</button>
+            <button mat-raised-button routerLink="About-us" routerLinkActive="active">About-Us</button>
+            <button mat-raised-button routerLink="Gallery" routerLinkActive="active">Gallery</button>
+            <button mat-raised-button routerLink="Vote" routerLinkActive="active">Vote</button>
+            <button mat-raised-button routerLink="Contact-us" routerLinkActive="active">Contact-Us</button>
+        </nav>
+    </div>
+
+    <div fxFlex="90">
+        <router-outlet></router-outlet>
+    </div>
+
 </div>
 
-<router-outlet></router-outlet>
+
+

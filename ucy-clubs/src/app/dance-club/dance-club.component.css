@@ -7,24 +7,12 @@
   font-family:"Times New Roman",Times New Roman, serif;
 }
 
-.label mat-panel-title {
-  float: right;
-  padding: 0 20px 20px 0;
-  width: 500px;
-  size: 200px;
-  font-size: 2em;
+.currClub{
+  background-color: white;
+  text-align: center;
+  font-size:20px;
 }
-
-mat-expansion-panel{
-/*  background-image: url("../../assets/Backgrounds/background.jpg"); */
-  background-size:auto;
-  color: black;
-
+.enrollButton{
+  background-color:rgb(108, 110, 131);
+  color: white;
 }
-.description mat-panel-description {
-  color: black;
-  text-align: right;
-  text-align-last: right;
-  text-after-overflow: right;
-}
-

@@ -8,7 +8,7 @@
 
 
   <div class="container">
-    <img mat-card-image class="product_image" src= "{{ info.imageSrc }}" alt="Photo of a product">
+    <img class="product_image" src= "{{ info.imageSrc }}" alt="Photo of a product">
 
     <div class="overlay">
       <div class="text">{{info.description}}</div>
@@ -24,7 +24,7 @@
     <div class="price"> {{ info.price }}€ </div>
   </mat-card-content>
 
-  <mat-card-actions>
+
     <div fxLayout="row" fxLayoutAlign="start center">
       <button fxFlex="33" mat-button (click)="decreaseQuantity()">-</button>
       <input  fxFlex="33" type="text" disabled="disabled" class="form-control"  [(ngModel)]="quantity" required/>
@@ -32,5 +32,4 @@
     </div>
     <button fxFill mat-raised-button (click)="addInCart()">Add To Cart</button>
 
-  </mat-card-actions>
 </mat-card>

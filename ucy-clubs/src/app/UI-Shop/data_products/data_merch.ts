@@ -6,14 +6,14 @@ export const products_data : Product_Merch[] = [
     club:'Dance club',
     price: 2,
     description:'Φαντασμαγορική βαλίτσα για όλες τις χρήσεις.',
-    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png'
+    imageSrc: 'https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg?auto=compress&cs=tinysrgb&h=350'
   },
   {
     title: 'Cookies1',
     club:'Dance club',
     price: 3,
     description:'sadsadsadsadsasadsadsads adsasadsadsadsadsasadsadsadsa dsasadsadsadsadsasadsadsadsadsasads adsadsadsasadsadsadsadsasa dsadsadsads asadsadsadsa dsasadsa dsadsadsasadsadsa',
-    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png'
+    imageSrc: 'https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg?auto=compress&cs=tinysrgb&h=350'
   },
   {
     title: 'Cookies2',

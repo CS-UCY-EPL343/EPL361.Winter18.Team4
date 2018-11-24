@@ -1,50 +1,27 @@
 
 /* You can add global styles to this file, and also import other style files */
-.picture{
+.ucyLogo{
   text-align: right;
 }
-.Title{
-  text-align: center;
-  color: gray;
-  font-family:"Times New Roman",Times New Roman, serif;
+.ucyLogoImg{
+  height:100px;
 }
 
-/* Master Styles */
 
-.menu-tabs button {
-  cursor: pointer;
-  cursor: hand;
-}
-.menu-tabs button {
-  font-family: "Times New Roman";
-  color: white;
-  font-size: large;
-  background-color: #eee;
-  padding: 5px 10px;
-  border-radius: 4px;
-  cursor: pointer;
-  cursor: hand;
-}
-.menu-tabs button:hover {
-  background-color: white;
-}
-.menu-tabs button:disabled {
-  background-color: #eee;
-  color: #aaa;
-  cursor: auto;
-}
 
 /* Navigation link styles */
 /*Meny bar -options*/
 .menu-tabs nav button {
   padding: 5px 20px;
+  color: white;
+  font-size:20px;
   text-decoration: gray;
   margin-top: 10px;
   display: inline-block;
   background-color: gray;
   border-color:white;
 }
-.menu-tabs nav button:visited, a:link {
+.menu-tabs nav button:visited {
   font-family: "Times New Roman";
   font-size: large;
   color: white;
@@ -59,69 +36,32 @@
 /*active button*/
 .menu-tabs nav button.active {
   color: black;
+  background: rgb(199, 192, 192);
 }
 
-/* items class */
-.menu-tabs .items {
-  margin: 0 0 2em 0;
-  list-style-type: none;
-  padding-left: 0;
-  width: 10em;
-}
-.menu-tabs .items li {
-  cursor: pointer;
-  position: relative;
-  left: 0;
-  background-color: #EEE;
-  margin: .5em;
-  padding: .3em;
-  height: 1.6em;
-  border-radius: 4px;
-}
-
-.menu-tabs .items li:hover {
-  color: gray;
-  background-color: #DDD;
-  left: .1em;
-}
-
-.menu-tabs .items li.selected:hover {
-  background-color: gray;
-  color: white;
-}
-
-.menu-tabs .items .text {
+.menu-tabs {
+  font-size: 100%;
   position: relative;
   top: -3px;
 }
 
-.menu-tabs .items li {
-  cursor: pointer;
-  position: relative;
-  left: 0;
-  background-color: #EEE;
-  color: gray;
-  margin: .5em;
-  padding: .3em;
-  height: 1.6em;
-  border-radius: 4px;
+
+.header{
+  background-color:rgb(85, 66, 66);
 }
 
-.menu-tabs .items .badge {
-  display: inline-block;
-  font-size: small;
+.footer {
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgb(100, 91, 91);
   color: white;
-  padding: 0.8em 0.7em 0 0.7em;
-  background-color: gray;
-  line-height: 1em;
-  position: relative;
-  left: -1px;
-  top: -4px;
-  height: 1.8em;
-  margin-right: .8em;
-  border-radius: 4px 0 0 4px;
+  text-align: center;
 }
-.menu-tabs .items li.selected {
-  background-color: white;
-  color: gray;
+
+.Title{
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-family: "Impact", "Charcoal", "sans-serif";
+  text-align: center;
 }
