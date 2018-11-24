@@ -1,8 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 
-
-
 @Component({
   selector: 'app-sing-up',
   templateUrl: './sing-up.component.html',
@@ -17,6 +15,9 @@ export class SingUpComponent implements OnInit {
   fifthFormGroup: FormGroup;
   sixFormGroup: FormGroup;
   constructor(private _formBuilder: FormBuilder) {
+  }
+  ButtonClick(){
+    {'register succefully'}
   }
 
   ngOnInit() {

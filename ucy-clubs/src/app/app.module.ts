@@ -43,12 +43,13 @@ import { GalleryComponent } from './gallery/gallery.component';
 import {MatIconModule} from '@angular/material/icon';
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
-import { HomeComponent } from './home/home.component';
+
 
 
 
 import {SlideshowModule} from 'ng-simple-slideshow';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+
 
 
 
@@ -74,8 +75,7 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     GalleryComponent,
     AboutUsComponent,
     ContactUsComponent,
-    HomeComponent,
-    SlideshowComponent
+    SlideshowComponent,
   ],
   imports: [
     BrowserModule,

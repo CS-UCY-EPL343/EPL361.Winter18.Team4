@@ -22,6 +22,7 @@
         <input matInput placeholder="Last name" formControlName="LastName" required>
       </mat-form-field>
       <div>
+        <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
       </div>
     </form>
@@ -51,6 +52,7 @@
         </mat-error>
       </mat-form-field>
       <div>
+        <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
       </div>
     </form>
@@ -62,6 +64,7 @@
         <input matInput type="password" placeholder="Password" formControlName="Password" required >
       </mat-form-field>
       <div>
+        <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
       </div>
     </form>
@@ -73,17 +76,17 @@
         <input matInput type="password" placeholder="RPassword" formControlName="RPassword" required  >
       </mat-form-field>
       <div>
+        <button mat-button matStepperPrevious>Back</button>
         <button mat-button matStepperNext>Next</button>
       </div>
     </form>
   </mat-step>
   <mat-step>
     <ng-template matStepLabel>Done</ng-template>
-    You are now done.
+    Registration completed successfully!!
     <div>
       <button mat-button matStepperPrevious>Back</button>
       <button mat-button (click)="stepper.reset()">Reset</button>
-      <button mat-button matStepperDone>Done</button>
     </div>
   </mat-step>
 </mat-horizontal-stepper>
