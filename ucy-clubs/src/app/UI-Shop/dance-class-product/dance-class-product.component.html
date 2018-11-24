@@ -1,0 +1,20 @@
+<mat-card class="product-card" >
+    <mat-card-header>
+      <mat-card-title>{{ item.title }}</mat-card-title>
+    </mat-card-header>
+  
+  
+    <div class="container">
+      <img class="product_image" src= "{{ item.imageSrc }}" alt="Photo of a product">
+    </div>
+  
+  
+
+    <mat-card-content>
+      <div class="price"> {{ item.price }}€ </div>
+    </mat-card-content>
+  
+  
+    <button fxFill mat-raised-button (click)="addInCart()">Add To Cart</button>
+  
+  </mat-card>

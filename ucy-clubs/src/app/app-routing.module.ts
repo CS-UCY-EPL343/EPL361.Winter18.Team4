@@ -13,6 +13,7 @@ import { ContactUsDanceComponent } from './contact-us-dance/contact-us-dance.com
 import {SlideshowComponent} from "./slideshow/slideshow.component";
 import { AboutUsComponent } from './about-us/about-us.component';
 import { ContactUsComponent } from './contact-us/contact-us.component';
+import { ClassesShopComponent } from './UI-Shop/classes-shop/classes-shop.component';
 
 
 const routes: Routes = [
@@ -27,6 +28,7 @@ const routes: Routes = [
   children:[{path: 'Vote', component: VoteComponent},
             {path: 'Gallery', component: GalleryComponent},
             {path: 'About-us', component: AboutUsDanceComponent},
+            {path: 'ClassseShop', component: ClassesShopComponent},
             {path: 'Contact-us', component: ContactUsDanceComponent}]},
   {path: "*", redirectTo:'home'}
   //{path: 'clubs/Dance-Club/Vote', component: VoteComponent, outlet: 'DanceClub'}
@@ -44,4 +46,4 @@ const routes: Routes = [
 export class AppRoutingModule { }
 export const routingComponents = [ShopComponent, NewsComponent, ClubsComponent, SingupLoginComponent,
              DanceClubComponent, VoteComponent, GalleryComponent, AboutUsDanceComponent, ContactUsDanceComponent,
-             SlideshowComponent, AboutUsComponent]
+             SlideshowComponent, AboutUsComponent, ClassesShopComponent]

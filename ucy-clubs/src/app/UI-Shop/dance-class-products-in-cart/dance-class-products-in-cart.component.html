@@ -1,0 +1,7 @@
+<mat-card class="products-in-cart">
+    <div fxLayout="column wrap" fxLayout.xs="column" fxLayoutGap="0.5%" fxLayout="column" fxLayoutAlign="space-between center" >
+        <div *ngFor="let item of itemsInCart">
+          <app-dance-class-product-in-cart [item] ="item"></app-dance-class-product-in-cart>
+        </div>
+      </div>
+</mat-card>

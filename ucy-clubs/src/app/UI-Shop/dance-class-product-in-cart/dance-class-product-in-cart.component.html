@@ -1,0 +1,21 @@
+<!--User will click "Add product" from a product-card, and the same product will appear
+in products-in-cart, as product-in-cart-->
+
+<mat-card class="product-in-cart">
+
+    <div fxFill>
+      <!--UPPER PART-->
+      <div fxFlex="30" fxFill>
+        <img fxFill class="product_image" mat-card-image src="{{ item.imageSrc }}" alt="Photo of a product">
+      </div>
+      <!--SECOND PART-->
+      <div fxFlex="60" fxFill>
+        <div fxFill>{{ item.title }}</div>
+        <div fxFill>{{ item.price }}</div>
+      </div>
+      <!--THIRD PART-->
+      <div fxFlex="10" fxLayout="column">
+          <button fxFlex="33" mat-button (click)="removeItem(item)" >x</button>
+      </div>
+    </div>
+  </mat-card>

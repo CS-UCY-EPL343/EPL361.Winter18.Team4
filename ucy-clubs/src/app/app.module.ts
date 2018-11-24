@@ -49,6 +49,12 @@ import { ContactUsComponent } from './contact-us/contact-us.component';
 
 import {SlideshowModule} from 'ng-simple-slideshow';
 import { SlideshowComponent } from './slideshow/slideshow.component';
+import { DanceClassProductComponent } from './UI-Shop/dance-class-product/dance-class-product.component';
+import { DanceClassCatalogueComponent } from './UI-Shop/dance-class-catalogue/dance-class-catalogue.component';
+import { DanceClassProductInCartComponent } from './UI-Shop/dance-class-product-in-cart/dance-class-product-in-cart.component';
+import { ClassesCartComponent } from './UI-Shop/classes-cart/classes-cart.component';
+import { ClassesShopComponent } from './UI-Shop/classes-shop/classes-shop.component';
+import { DanceClassProductsInCartComponent } from './UI-Shop/dance-class-products-in-cart/dance-class-products-in-cart.component';
 
 
 
@@ -76,6 +82,12 @@ import { SlideshowComponent } from './slideshow/slideshow.component';
     AboutUsComponent,
     ContactUsComponent,
     SlideshowComponent,
+    DanceClassProductComponent,
+    DanceClassCatalogueComponent,
+    DanceClassProductInCartComponent,
+    ClassesCartComponent,
+    ClassesShopComponent,
+    DanceClassProductsInCartComponent,
   ],
   imports: [
     BrowserModule,
