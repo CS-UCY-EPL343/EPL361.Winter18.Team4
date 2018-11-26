@@ -26,6 +26,7 @@ export class VoteComponent implements OnInit {
   danceClasses = DANCECLASSES;
   selectedOptions: DanceClass[];
   constructor(public dialog: MatDialog) {
+    console.log(this.curProfile);
   }
 
   ngOnInit() {
