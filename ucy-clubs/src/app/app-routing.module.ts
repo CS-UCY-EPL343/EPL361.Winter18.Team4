@@ -26,6 +26,7 @@ const routes: Routes = [
   {path: 'contact-us', component: ContactUsComponent},
   {path: 'clubs/Dance-Club', component: DanceClubComponent,
   children:[{path: 'Vote', component: VoteComponent},
+            {path: 'Enroll', component: SingupLoginComponent},
             {path: 'Gallery', component: GalleryComponent},
             {path: 'About-us', component: AboutUsDanceComponent},
             {path: 'ClassseShop', component: ClassesShopComponent},

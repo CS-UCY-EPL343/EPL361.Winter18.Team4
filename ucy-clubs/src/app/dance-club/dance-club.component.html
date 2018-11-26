@@ -1,13 +1,13 @@
 
 
 <div fxLayout="row">
-    <div class="menu-tabs2" fxFlex="10" fxLayout.xs="column">
+    <div class="menu-tabs2" fxFlex="20" fxLayout.xs="column">
         <nav fxLayout="column">
             <div class="currClub">
                 <div class="clubTitle">Dance Club</div>
                 <img with="100" height="100" src="assets/Logos/logoNew.png">
             </div>
-            <button mat-raised-button class="enrollButton">Enroll!</button>
+            <button mat-raised-button class="enrollButton" routerLink="Enroll" routerLinkActive="active">Enroll!</button>
             <button mat-raised-button routerLink="About-us" routerLinkActive="active">About-Us</button>
             <button mat-raised-button routerLink="Gallery" routerLinkActive="active">Gallery</button>
             <button mat-raised-button routerLink="ClassseShop" routerLinkActive="active">Dance Classes</button>
@@ -16,7 +16,11 @@
         </nav>
     </div>
 
-    <div fxFlex="90">
+  <p fxFlex="1">
+
+  </p>
+
+    <div fxFlex="79">
         <router-outlet></router-outlet>
     </div>
 

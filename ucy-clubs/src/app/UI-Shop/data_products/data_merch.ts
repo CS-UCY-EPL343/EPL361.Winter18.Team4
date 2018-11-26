@@ -2,66 +2,66 @@ import { Product_Merch } from "src/app/UI-Shop/Product_Merch";
 
 export const products_data : Product_Merch[] = [
   {
-    title: 'Cookies0',
+    title: 'Mug',
     club:'Dance club',
     price: 2,
-    description:'Φαντασμαγορική βαλίτσα για όλες τις χρήσεις.',
-    imageSrc: 'https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg?auto=compress&cs=tinysrgb&h=350'
+    description:'Φλιτζάνι για τις ζεστες νυχτες του χειμώνα.',
+    imageSrc: '../../../assets/products/mugs.jpg',
   },
   {
-    title: 'Cookies1',
+    title: 'Pillow',
     club:'Dance club',
     price: 3,
-    description:'sadsadsadsadsasadsadsads adsasadsadsadsadsasadsadsadsa dsasadsadsadsadsasadsadsadsadsasads adsadsadsasadsadsadsadsasa dsadsadsads asadsadsadsa dsasadsa dsadsadsasadsadsa',
-    imageSrc: 'https://images.pexels.com/photos/46710/pexels-photo-46710.jpeg?auto=compress&cs=tinysrgb&h=350'
+    description:'Μαξιλάρι για τον καλύτερο ύπνο',
+    imageSrc: '../../../assets/products/pillow.jpg'
   },
   {
-    title: 'Cookies2',
+    title: 'Keyring',
     club:'Dance club',
     price: 5,
-    description:'Φαντασμαγορική βαλίτσα για όλες τις χρήσεις.',
-    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png'
+    description:'Μπρελόκ για τα κλειδιά σας',
+    imageSrc: '../../../assets/products/brelok.jpg'
   },
   {
-    title: 'Cookies3',
+    title: 'Coasters',
     club:'Dance club',
     price: 10.50,
-    description:'sadsadsadsadsasadsadsads adsasadsadsadsadsasadsadsadsa dsasadsadsadsadsasadsadsadsadsasads adsadsadsasadsadsadsadsasa dsadsadsads asadsadsadsa dsasadsa dsadsadsasadsadsa',
-    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png'
+    description:'Πατάκια για τα ποτήρια, Για να μην βρέχετε το τραπέζι σας.',
+    imageSrc: '../../../assets/products/glass.png'
   },
   {
-    title: 'Cookies4',
+    title: 'Canvas',
     club:'Dance club',
     price: 10.50,
-    description:'sadsadsadsadsasadsadsads adsasadsadsadsadsasadsadsadsa dsasadsadsadsadsasadsadsadsadsasads adsadsadsasadsadsadsadsasa dsadsadsads asadsadsadsa dsasadsa dsadsadsasadsadsa',
-    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png'
+    description:'Καδράκι με το λογότυπο του Χορευτικού Ομίλου',
+    imageSrc: '../../../assets/products/canvas.jpg'
   },
   {
-    title: 'Cookies5',
+    title: 'Notebook',
     club:'Dance club',
     price: 10.50,
-    description:'sadsadsadsadsasadsadsads adsasadsadsadsadsasadsadsadsa dsasadsadsadsadsasadsadsadsadsasads adsadsadsasadsadsadsadsasa dsadsadsads asadsadsadsa dsasadsa dsadsadsasadsadsa',
-    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png'
+    description:'Σημειοματάριο για το Πανεπιστήμιο',
+    imageSrc: '../../../assets/products/notebook.jpg'
   },
   {
-    title: 'Cookies6',
-    club:'Dance club',
+    title: 'Pencil Case',
+    club:'Art club',
     price: 10.50,
-    description:'sadsadsadsadsasadsadsads adsasadsadsadsadsasadsadsadsa dsasadsadsadsadsasadsadsadsadsasads adsadsadsasadsadsadsadsasa dsadsadsads asadsadsadsa dsasadsa dsadsadsasadsadsa',
-    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png'
+    description:'Μολυβοθήκη',
+    imageSrc: '../../../assets/products/case.jpg'
   },
   {
-    title: 'Cookies7',
-    club:'Dance club',
+    title: 'Sketchbook',
+    club:'Art club',
     price: 10.50,
-    description:'sadsadsadsadsasadsadsads adsasadsadsadsadsasadsadsadsa dsasadsadsadsadsasadsadsadsadsasads adsadsadsasadsadsadsadsasa dsadsadsads asadsadsadsa dsasadsa dsadsadsasadsadsa',
-    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png'
+    description:'Sketchbook για τους καλυτέχνες',
+    imageSrc: '../../../assets/products/sketchbook.jpg'
   },
   {
-    title: 'Cookies8',
-    club:'Dance club',
+    title: 'Backbag',
+    club:'Art club',
     price: 10.50,
-    description:'sadsadsadsadsasadsadsads adsasadsadsadsadsasadsadsadsa dsasadsadsadsadsasadsadsadsadsasads adsadsadsasadsadsadsadsasa dsadsadsads asadsadsadsa dsasadsa dsadsadsasadsadsa',
-    imageSrc: 'https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/Angular_full_color_logo.svg/512px-Angular_full_color_logo.svg.png'
+    description:'Backbag για το πανεπιστήμιο',
+    imageSrc: '../../../assets/products/backbag.jpg'
   },
 ]

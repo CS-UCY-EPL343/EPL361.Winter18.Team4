@@ -1,22 +1,46 @@
+
 img{
   margin-top: 10px;
   margin-left: 3px;
+  position:center;
 }
 .example-form {
   min-width: 150px;
   max-width: 500px;
   width: 100%;
+  position: center;
 }
 
 .example-full-width {
   width: 100%;
+  position: center;
 }
 .label{
   font-weight: bold;
-  text-align: left;
-
+  text-align: center;
+position:center;
 }
 
 .content{
   text-align: center;
+  position: center;
 }
+
+.mat-form-field{
+  position: center;
+}
+
+.matcard1{
+  width: 350px;
+  height: 400px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  vertical-align:middle;
+}
+
+mat-card{
+  text-align: center;
+}
+
+

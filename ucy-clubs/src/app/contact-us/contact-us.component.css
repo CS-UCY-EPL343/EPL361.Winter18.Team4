@@ -10,9 +10,26 @@ img{
 
 .example-full-width {
   width: 100%;
+
+}
+
+.mat-list-item{
+  text-align: center;
 }
 .label{
   font-weight: bold;
-  text-align: left;
+  text-align: center;
+}
 
+.madcard1{
+  width: 350px;
+  height: 400px;
+  display: block;
+  margin-left:auto;
+  margin-right:auto;
+  vertical-align:middle;
+}
+
+mat-card{
+  text-align: center;
 }

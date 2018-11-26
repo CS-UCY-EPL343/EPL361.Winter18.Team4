@@ -1,9 +1,9 @@
 button {
   margin: 20px 50px 10px 20px;
-  background-color: rgba(40, 80, 50, 0.2);
+  background-color: darkgrey;
 }
 #name{
-  border-left: 3px solid red;
+  border-left: 3px blue;
 }
 mat-selection-list{
   width: 46%;
