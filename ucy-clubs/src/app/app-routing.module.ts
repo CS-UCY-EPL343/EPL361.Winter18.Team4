@@ -17,6 +17,7 @@ import { ClassesShopComponent } from './UI-Shop/classes-shop/classes-shop.compon
 
 
 const routes: Routes = [
+  {path: '', redirectTo: '/home', pathMatch: 'full' },
   {path: 'home',  component: SlideshowComponent},
   {path: 'about-us', component: AboutUsComponent},
   {path: 'e-shop', component: ShopComponent},
